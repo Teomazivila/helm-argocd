@@ -1,0 +1,36 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: auditdb-tmzgitops
+  namespace: argocd
+spec:
+  project: tmzgitops
+  source:
+    repoURL: 'https://github.com/Teomazivila/helm-argocd.git'
+    path: helm-charts/postgresql
+    targetRevision: main
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: tmzgitops
+# ---
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: auditdb-PLEASE_ADD_ME
+#   namespace: argocd
+# spec:
+#   project: PLEASE_ADD_ME
+#   source:
+#     repoURL: 'https://github.com/Teomazivila/helm-argocd.git'
+#     path: helm-charts/postgresql
+#     targetRevision: main
+#     helm:
+#       valueFiles:
+#         - values-PLEASE_ADD_ME.yaml
+#   destination:
+#     server: 'https://kubernetes.default.svc'
+#     namespace: PLEASE_ADD_ME
+...
