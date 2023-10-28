@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/Teomazivila/helm-argocd.git'
     path: helm-charts/sonarqube
-    targetRevision: master
+    targetRevision: main
     helm:
       valueFiles:
         - values.yaml

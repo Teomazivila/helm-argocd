@@ -480,7 +480,7 @@ service:
 route:
   enabled: true
   hostname: sonarqube
-  hostnamesuffix: kubernetes.svc.local
+  hostnamesuffix: kubernetes.local.svc
 
 ingress:
   ## @param ingress.enabled Enable ingress record generation for SonarQube&trade;
