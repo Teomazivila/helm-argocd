@@ -480,7 +480,7 @@ service:
 route:
   enabled: true
   hostname: sonarqube
-  hostnamesuffix: aro1.radixcloud.software
+  hostnamesuffix: kubernetes.svc.local
 
 ingress:
   ## @param ingress.enabled Enable ingress record generation for SonarQube&trade;
@@ -967,6 +967,3 @@ externalDatabase:
   ## @param externalDatabase.port Port of an external PostgreSQL to connect (only if postgresql.enabled=false)
   ##
   port: 5432
-
-# expose route for openshift
-#oc expose svc/sonarqube --name=sonarqube --hostname=sonarqube.aro1.radixcloud.software -n sonarqube
