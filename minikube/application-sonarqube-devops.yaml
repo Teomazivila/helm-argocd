@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'git@github.com:qualica/automation.git'
+    repoURL: 'https://github.com/Teomazivila/helm-argocd.git'
     path: helm-charts/sonarqube
     targetRevision: master
     helm:
