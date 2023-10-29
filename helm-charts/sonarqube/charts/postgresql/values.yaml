@@ -1354,7 +1354,7 @@ metrics:
     enabled: false
     ## @param metrics.serviceMonitor.namespace Namespace for the ServiceMonitor Resource (defaults to the Release Namespace)
     ##
-    namespace: ""
+    namespace: "sonarqube"
     ## @param metrics.serviceMonitor.interval Interval at which metrics should be scraped.
     ## ref: https://github.com/coreos/prometheus-operator/blob/master/Documentation/api.md#endpoint
     ##
@@ -1392,7 +1392,7 @@ metrics:
     enabled: false
     ## @param metrics.prometheusRule.namespace Namespace for the PrometheusRule Resource (defaults to the Release Namespace)
     ##
-    namespace: ""
+    namespace: "sonarqube"
     ## @param metrics.prometheusRule.labels Additional labels that can be used so PrometheusRule will be discovered by Prometheus
     ##
     labels: {}
