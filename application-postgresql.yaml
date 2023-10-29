@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: auditdb-tmzgitops
-  namespace: argocd
+  name: auditdb-sonarqube
+  namespace: sonarqube
 spec:
-  project: tmzgitops
+  project: default
   source:
     repoURL: 'https://github.com/Teomazivila/helm-argocd.git'
     path: helm-charts/postgresql
@@ -13,8 +13,8 @@ spec:
       valueFiles:
         - values.yaml
   destination:
-    server: 'https://kubernetes.default.svc'
-    namespace: tmzgitops
+    server: 'https://teomaz-devops.sonarqube.svc'
+    namespace: sonarqube
 # ---
 # apiVersion: argoproj.io/v1alpha1
 # kind: Application
