@@ -13,7 +13,7 @@ spec:
       valueFiles:
         - values.yaml
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: 'https://teomaz-devops.sonarqube.svc'
     namespace: tmzgitops
 # ---
 # apiVersion: argoproj.io/v1alpha1
