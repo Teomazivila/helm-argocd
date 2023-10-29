@@ -165,7 +165,7 @@ persistence:
   mountPath: /var/lib/postgresql
   subPath: ""
   accessModes:  [ReadWriteOnce]
-  storageClass: "premium-reclaim"
+  storageClass: "standard"
   ## Storage Capacity for persistent volume
   size: 10Gi
   annotations: {}
