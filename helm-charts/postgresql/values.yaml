@@ -160,15 +160,15 @@ ldap:
 ## Enable persistence using Persistent Volume Claims
 ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
 ##
-persistence:
-  enabled: true
-  mountPath: /var/lib/postgresql
-  subPath: ""
-  accessModes:  [ReadWriteOnce]
-  storageClass: "premium-reclaim"
-  ## Storage Capacity for persistent volume
-  size: 10Gi
-  annotations: {}
+# persistence:
+#   enabled: true
+#   mountPath: /var/lib/postgresql
+#   subPath: ""
+#   accessModes:  [ReadWriteOnce]
+#   storageClass: "premium-reclaim"
+#   ## Storage Capacity for persistent volume
+#   size: 10Gi
+#   annotations: {}
 
 ## Configure liveness and readiness probes
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
