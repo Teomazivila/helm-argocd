@@ -15,7 +15,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: "standard-retain"
+  storageClass: "standard"
 
 ## @section Common parameters
 ##
@@ -599,7 +599,7 @@ persistence:
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
   ## If undefined (the default) or set to null, no storageClassName spec is set, choosing the default provisioner
   ##
-  storageClass: "standard-retain"
+  storageClass: "standard"
   ## @param persistence.accessModes [array] Persistent Volume access modes
   ##
   accessModes:
@@ -933,7 +933,7 @@ postgresql:
       ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
       ##   GKE, AWS & OpenStack)
       ##
-      storageClass: "standard-retain"
+      storageClass: "standard"
       ## @param postgresql.primary.persistence.accessMode PVC Access Mode for PostgreSQL volume
       ##
       accessMode: ReadWriteOnce
